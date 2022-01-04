@@ -55,7 +55,7 @@ const UpdateAccount = ({
           }}
           type="text"
           name="first_name"
-          defaultValue=""
+          defaultValue={userInfo.first_name}
           render={({ field }) => (
             <Input {...field} variant="filled" placeholder="First Name" />
           )}
@@ -77,7 +77,7 @@ const UpdateAccount = ({
           }}
           type="text"
           name="last_name"
-          defaultValue=""
+          defaultValue={userInfo.last_name}
           render={({ field }) => (
             <Input {...field} variant="filled" placeholder="Last Name" />
           )}
@@ -116,7 +116,7 @@ const UpdateAccount = ({
       <HStack w="100%">
         <Button
           variant="outline"
-          w="100%"
+          w={{ base: '100%', md: '148px' }}
           marginTop="5"
           form="account-form"
           id="account-submit"
