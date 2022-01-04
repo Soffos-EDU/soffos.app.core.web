@@ -11,6 +11,7 @@ export { default as SignIn } from './components/organisms/SignIn';
 export { default as SignUp } from './components/organisms/SignUp';
 export { default as ResetPasswordSendEmail } from './components/organisms/ResetPasswordSendEmail';
 export { default as ResetNewPassword } from './components/organisms/ResetNewPassword';
+export { default as UpdateAccount } from './components/organisms/UpdateAccount';
 
 // Assets
 export * from './assets';
