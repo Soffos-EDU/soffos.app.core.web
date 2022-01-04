@@ -117,6 +117,7 @@ const UpdateAccount = ({
         <Button
           variant="outline"
           w={{ base: '100%', md: '148px' }}
+          ml="auto"
           marginTop="5"
           form="account-form"
           id="account-submit"
