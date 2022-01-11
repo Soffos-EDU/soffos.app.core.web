@@ -340,7 +340,7 @@ const SignUp = ({ onSignUp, isLoading, submitErrors, showLabelInput }) => {
               {...field}
             >
               I agree to the{' '}
-              <Link target="_blank" href="/terms-of-use">
+              <Link target="_blank" href="/terms-and-privacy">
                 terms and privacy.
               </Link>
             </Checkbox>
