@@ -179,12 +179,12 @@ const SignUp = ({ onSignUp, isLoading, submitErrors, showLabelInput }) => {
                 required: 'This field is required',
                 validate: (value) => isEmailValid(value) || 'Enter valid email',
               }}
-              type="email"
               name="responsible"
               defaultValue=""
               render={({ field }) => (
                 <Input
                   {...field}
+                  type="email"
                   variant="filled"
                   placeholder="Responsible Email"
                 />
@@ -210,11 +210,15 @@ const SignUp = ({ onSignUp, isLoading, submitErrors, showLabelInput }) => {
             required: 'This field is required',
             validate: (value) => isEmailValid(value) || 'Enter valid email',
           }}
-          type="email"
           name="email"
           defaultValue=""
           render={({ field }) => (
-            <Input {...field} variant="filled" placeholder="Email" />
+            <Input
+              {...field}
+              type="email"
+              variant="filled"
+              placeholder="Email"
+            />
           )}
         />
         <FormErrorMessage>{formErrors?.email?.message}</FormErrorMessage>
