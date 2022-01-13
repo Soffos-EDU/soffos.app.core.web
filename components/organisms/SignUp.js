@@ -152,7 +152,7 @@ const SignUp = ({ onSignUp, isLoading, submitErrors, showLabelInput }) => {
                   {...inputProps}
                   variant="filled"
                   type="tel"
-                  placeholder="Birthday"
+                  placeholder="Birthday (MM/DD/YYYY)"
                 />
               )}
             </InputMask>
