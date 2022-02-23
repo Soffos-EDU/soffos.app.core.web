@@ -1,4 +1,5 @@
 export * from '@chakra-ui/react';
+export * from '@chakra-ui/icons';
 export { Global } from '@emotion/react';
 
 // DesignSystem Wrapper
