@@ -1,5 +1,5 @@
 {
-  "name": "@soffos/ui",
+  "name": "@soffos/core",
   "version": "0.0.0",
   "description": "Collection of shared components used across Soffos brand apps",
   "sideEffects": false,
