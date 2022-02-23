@@ -1,20 +1,15 @@
 export * from '@chakra-ui/react';
-export { Grid as ChakraGrid } from '@chakra-ui/react';
-export { GridItem as ChakraGridItem } from '@chakra-ui/react';
 export { Global } from '@emotion/react';
 
 // DesignSystem Wrapper
-export { default as DesignSystem } from './components/custom-app/DesignSystem';
+export { default as DesignSystem } from './src/layout/DesignSystem';
 
-// Organisms
-export { default as SignIn } from './components/organisms/SignIn';
-export { default as SignUp } from './components/organisms/SignUp';
-export { default as ResetPasswordSendEmail } from './components/organisms/ResetPasswordSendEmail';
-export { default as ResetNewPassword } from './components/organisms/ResetNewPassword';
-export { default as UpdateAccount } from './components/organisms/UpdateAccount';
+// Custom Components
+// Menu
+// etc...
 
 // Assets
-export * from './assets';
+export * from './src/assets';
 
 // Utils
-export * from './utils';
+export * from './src/utils';
