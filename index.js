@@ -1,15 +1,13 @@
 export * from '@chakra-ui/react';
+export * from '@chakra-ui/icons';
 export { Global } from '@emotion/react';
 
 // DesignSystem Wrapper
 export { default as DesignSystem } from './src/layout/DesignSystem';
 
+// Utils
+export * from './src/utils';
+
 // Custom Components
 // Menu
 // etc...
-
-// Assets
-export * from './src/assets';
-
-// Utils
-export * from './src/utils';
