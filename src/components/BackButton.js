@@ -46,6 +46,7 @@ const BackButton = ({
       <Box
         {...backButtonStyles}
         top={inside ? '0' : { base: '30px', md: '50px' }}
+        data-testid="back-button"
         onClick={handleBackAction}
       >
         <Flex>
