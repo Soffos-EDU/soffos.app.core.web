@@ -3,8 +3,9 @@ import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import { IoIosArrowBack } from 'react-icons/io';
 
-const DynamicModalPromptAction = dynamic(() =>
-  import('components/ModalPromptAction')
+const DynamicModalPromptAction = dynamic(
+  () => import('components/ModalPromptAction'),
+  { ssr: false }
 );
 
 const backButtonStyles = {
