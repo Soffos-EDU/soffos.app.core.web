@@ -1,12 +1,7 @@
 import { Box, Flex, Text, useDisclosure } from '@chakra-ui/react';
-import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import { IoIosArrowBack } from 'react-icons/io';
-
-const DynamicModalPromptAction = dynamic(
-  () => import('components/ModalPromptAction'),
-  { ssr: false }
-);
+import ModalPromptAction from './ModalPromptAction';
 
 const backButtonStyles = {
   cursor: 'pointer',
@@ -58,7 +53,7 @@ const BackButton = ({
         </Flex>
       </Box>
       {shouldPrompt && (
-        <DynamicModalPromptAction
+        <ModalPromptAction
           isOpen={isOpen}
           onClose={() => {
             onClose();
